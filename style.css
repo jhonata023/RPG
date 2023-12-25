@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes ataque {
+    0% {
+        background-image: url(/arquivos/personagem/ataque1.png);
+    }
+    20% {
+        background-image: url(/arquivos/personagem/ataque2.png);
+    }
+    40% {
+        background-image: url(/arquivos/personagem/ataque3.png);
+    }
+    60% {
+        background-image: url(/arquivos/personagem/ataque4.png);
+    }
+    80% {
+        background-image: url(/arquivos/personagem/ataque5.png);
+    }
+    100% {
+        background-image: url(/arquivos/personagem/ataque6.png);
+    }
+}
+
+@keyframes ataque-caveira {
+    from {
+        background-image: url(/arquivos/caveira.png);
+    }
+    to {
+        background-image: url(/arquivos/caveira2.png);
+    }
+}
+
+.none {
+    display: none !important;
+}
+
+.ataque {
+    animation: ataque 0.2s linear;
+}
+
+.ataque-caveira {
+    animation: ataque-caveira 0.5s;
+}
+
+#npc, #container, #personagem, #life3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#npc, #personagem {
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+}
+
+#personagem {
+    background-image: url(/arquivos/personagem/ataque1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#container {
+    height: 90vh;
+    background-color: black;
+}
+
+#conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 582px;
+    min-width: 793px;
+    padding: 2rem;
+
+    position: relative;
+    overflow: hidden;
+
+    background-image: url(/arquivos/mapa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: aqua;
+}
+
+#life3, #personagem {
+    bottom: 5px;
+    left: 90px;
+}
+
+#life3{
+    background-image: url(/arquivos/pocao.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    height: 70px;
+    width: 70px;
+    position: absolute;
+
+    bottom: 200px;
+    left: 450px;
+}
+
+#npc {
+    /* background-color: greenyellow; */
+    left: 90px;
+    bottom: 400px;
+    background-image: url(/arquivos/caveira.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#bag {
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-gap: 2px;
+
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.418);
+    width: 200px;
+    height: 300px;
+
+    border: 2px solid;
+    border-radius: 20px;
+
+    padding: 2rem;
+}
+
+.poison-life {
+    height: 50px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.poison-life:hover {
+    background-color: rgba(151, 151, 151, 0.534);
+}
