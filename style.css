@@ -6,31 +6,31 @@
 
 @keyframes ataque {
     0% {
-        background-image: url(/arquivos/personagem/ataque1.png);
+        background-image: url(./arquivos/personagem/ataque1.png);
     }
     20% {
-        background-image: url(/arquivos/personagem/ataque2.png);
+        background-image: url(./arquivos/personagem/ataque2.png);
     }
     40% {
-        background-image: url(/arquivos/personagem/ataque3.png);
+        background-image: url(./arquivos/personagem/ataque3.png);
     }
     60% {
-        background-image: url(/arquivos/personagem/ataque4.png);
+        background-image: url(./arquivos/personagem/ataque4.png);
     }
     80% {
-        background-image: url(/arquivos/personagem/ataque5.png);
+        background-image: url(./arquivos/personagem/ataque5.png);
     }
     100% {
-        background-image: url(/arquivos/personagem/ataque6.png);
+        background-image: url(./arquivos/personagem/ataque6.png);
     }
 }
 
 @keyframes ataque-caveira {
     from {
-        background-image: url(/arquivos/caveira.png);
+        background-image: url(./arquivos/caveira.png);
     }
     to {
-        background-image: url(/arquivos/caveira2.png);
+        background-image: url(./arquivos/caveira2.png);
     }
 }
 
@@ -59,7 +59,7 @@
 }
 
 #personagem {
-    background-image: url(/arquivos/personagem/ataque1.png);
+    background-image: url(./arquivos/personagem/ataque1.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -81,7 +81,7 @@
     position: relative;
     overflow: hidden;
 
-    background-image: url(/arquivos/mapa.png);
+    background-image: url(./arquivos/mapa.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: aqua;
@@ -93,7 +93,7 @@
 }
 
 #life3{
-    background-image: url(/arquivos/pocao.png);
+    background-image: url(./arquivos/pocao.png);
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -109,7 +109,7 @@
     /* background-color: greenyellow; */
     left: 90px;
     bottom: 400px;
-    background-image: url(/arquivos/caveira.png);
+    background-image: url(./arquivos/caveira.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
