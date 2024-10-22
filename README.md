@@ -1,4 +1,4 @@
-#Funções JS
+# Funções JS
 
 - A ideia deste projeto é conseguir aplicar algumas funções aprendidas no JS.
   
